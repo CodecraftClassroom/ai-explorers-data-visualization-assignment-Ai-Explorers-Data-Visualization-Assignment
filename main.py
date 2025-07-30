@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def load_fifa_data(file_path):
+def load_data(file_path):
     return pd.read_csv(file_path)
 
 def plot_fifa_data(fifa_data):
@@ -12,9 +12,6 @@ def plot_fifa_data(fifa_data):
     sns.lineplot(data=fifa_data['ARG'])
     plt.savefig("fifa_plot.png")
     plt.close()
-
-def load_flight_data(file_path):
-    return pd.read_csv(file_path)
 
 def plot_flight_data(flight_data):
     plt.figure(figsize=(10, 6))
