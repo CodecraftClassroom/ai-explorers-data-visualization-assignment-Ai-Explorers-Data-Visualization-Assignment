@@ -6,8 +6,8 @@ from main import load_data, plot_fifa_data, plot_flight_data
 class TestVisualizations(unittest.TestCase):
 
     def setUp(self):
-        self.fifa_file = '/data/dataset_1.csv'
-        self.flight_file = '/data/dataset_2.csv'
+        self.fifa_file = 'data/dataset_1.csv'
+        self.flight_file = 'data/dataset_2.csv'
 
         # Make sure the sample data exists
         self.assertTrue(os.path.exists(self.fifa_file))
