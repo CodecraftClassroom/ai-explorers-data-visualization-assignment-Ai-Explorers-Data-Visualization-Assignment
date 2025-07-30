@@ -1,7 +1,7 @@
 import unittest
 import os
 import pandas as pd
-from main import load_fifa_data, plot_fifa_data, load_flight_data, plot_flight_data
+from main import load_data, plot_fifa_data, plot_flight_data
 
 class TestVisualizations(unittest.TestCase):
 
